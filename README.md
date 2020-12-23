@@ -53,4 +53,4 @@ Viernes is an MIT-licensed open source project.
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+  Viernes is [MIT licensed](LICENSE).
