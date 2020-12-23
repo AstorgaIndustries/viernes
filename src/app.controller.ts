@@ -7,7 +7,9 @@ const client = new Discord.Client();
 @Controller('app')
 export class AppController {
   constructor(private readonly appService: AppService) {
-    
+    //temp
+    const isDevelopmentEnv = process.env.DISCORD_ENV !== 'production';
+
     //Say Viernes
     client.on('message', msg => {
       if (msg.content.toLowerCase() === 'hola viernes') {
@@ -71,7 +73,11 @@ export class AppController {
       }
     });
 
-    client.login(process.env.DISCORD_TOKEN);
+
+    if (!isDevelopmentEnv) {
+      client.login(process.env.DISCORD_TOKEN);
+    } 
+
   }
 
   @Get(':message')

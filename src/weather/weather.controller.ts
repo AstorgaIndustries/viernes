@@ -7,6 +7,10 @@ const VIERNES = ['viernes', 'friday'];
 @Controller('weather')
 export class WeatherController {
   constructor(private readonly appService: WeatherService) {
+
+    //temp
+    const isDevelopmentEnv = process.env.DISCORD_ENV !== 'production';
+
     //Weather
     client.on('message', msg => {
 
@@ -31,6 +35,9 @@ export class WeatherController {
       });
     });
 
-    client.login(process.env.DISCORD_TOKEN);
+    if (!isDevelopmentEnv) {
+      client.login(process.env.DISCORD_TOKEN);
+    } 
+
   }
 }
