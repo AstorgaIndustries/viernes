@@ -8,6 +8,7 @@
 
 ## Description
 
+Viernes bot Discrod.
 
 This bot is created for entertainment purposes, the names and references are for inspiration only, which if there is any annoyance with the names or images or message please send a notification to proceed to delete or change.
 
