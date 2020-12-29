@@ -51,6 +51,9 @@ Viernes is an MIT-licensed open source project.
 - Author - [Marco Astorga](https://marcoastorga.info)
 - Website - [https://astorgaindustries.com](https://astorgaindustries.com/)
 
+## Developers 
+
+- Author - [Sebastian Huaitro](https://shuaitro.info)
 
 ## License
 
