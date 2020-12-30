@@ -19,6 +19,7 @@ export class AppController {
           msg.channel.send(appService.getHello() + 'Sr. Stark');
         } else {
           msg.channel.send(appService.getHello() + name);
+          console.log(appService.getHello() + name);
         }
       }
       if (msg.content.toLowerCase() === 'adios viernes') {
